@@ -149,12 +149,13 @@ COCO_METRIC_NAMES_AND_INDEX = (
     ('Precision/mAP (small)', 3),
     ('Precision/mAP (medium)', 4),
     ('Precision/mAP (large)', 5),
-    ('Recall/AR@1', 6),
-    ('Recall/AR@10', 7),
-    ('Recall/AR@100', 8),
-    ('Recall/AR@100 (small)', 9),
-    ('Recall/AR@100 (medium)', 10),
-    ('Recall/AR@100 (large)', 11)
+    ('Recall/AR@.50IOU', 6),
+    ('Recall/AR@1', 7),
+    ('Recall/AR@10', 8),
+    ('Recall/AR@100', 9),
+    ('Recall/AR@100 (small)', 10),
+    ('Recall/AR@100 (medium)', 11),
+    ('Recall/AR@100 (large)', 12)
 )
 
 COCO_KEYPOINT_METRIC_NAMES_AND_INDEX = (
