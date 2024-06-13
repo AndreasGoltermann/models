@@ -301,9 +301,6 @@ class CocoDetectionEvaluator(object_detection_evaluation.DetectionEvaluator):
         self._detection_boxes_list)
     box_evaluator = coco_tools.COCOEvalWrapper(
         coco_wrapped_groundtruth, coco_wrapped_detections, agnostic_mode=False)
-    tf.logging.info(self._include_metrics_per_category)
-    tf.logging.info(self._all_metrics_per_category)
-    tf.logging.info(self._super_categories)
     box_metrics, box_per_category_ap = box_evaluator.ComputeMetrics(
         include_metrics_per_category=self._include_metrics_per_category,
         all_metrics_per_category=self._all_metrics_per_category,
