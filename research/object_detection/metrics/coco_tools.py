@@ -292,6 +292,7 @@ class COCOEvalWrapper(cocoeval.COCOeval):
       summary_metrics = OrderedDict(
           [(name, self.stats[index]) for name, index in
            COCO_METRIC_NAMES_AND_INDEX])
+      print(summary_metrics)
     elif self._iou_type == 'keypoints':
       category_id = self.GetCategoryIdList()[0]
       category_name = self.GetCategory(category_id)['name']
